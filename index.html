@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopel</title>
+    <link rel="stylesheet" href="styles/header-style.css">
+    <style>
+
+        body {
+            background-color: darkgray;
+        }
+
+        /*.cart {*/
+        /*    !*align-content: center;*!*/
+        /*    align-items: center;*/
+        /*    !*vertical-align: center;*!*/
+        /*}*/
+
+
+        .product-table {
+            margin-top: 5%;
+            /*align-items: center;*/
+            margin-right: auto;
+            margin-left: auto;
+            background-color: white;
+            border-style: solid;
+            border-radius: 10px;
+            border-width: 5px;
+            border-color: black;
+            /*padding: 10px;*/
+        }
+        .product-image {
+            max-width: 30%;
+        }
+        .product {
+            text-align: center;
+            margin: 5px;
+        /*    align-content: center;*/
+        /*    align-items: center;*/
+        /*    align-self: center;*/
+        /*    text-align-all: center;*/
+
+        }
+        .add-to-cart-button {
+            text-align: right;
+            cursor: pointer;
+        }
+
+        .product-link {
+            text-decoration: none;
+            color: #00ddff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="main-image" src="images/SHOPEL.png" alt="Shopel"></a>
+        <div class="right-header">
+            <table>
+                <tr>
+                    <td>
+                        <div class="cart">
+                            <a class="cart-button" href="cart.html"><img src="images/cart1.png" class="cart-button-image" alt="Cart"></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="login">
+                            <button class="login-button" onclick="location.href = 'login.html'">Login</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </header>
+
+    <section class="products">
+        <table class="product-table">
+            <caption><h1 style="background-color: rgb(128,128,128); border-color: black; border-style: solid; border-radius: 2px">Smartfony</h1></caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <img src="https://image.alza.cz/products/RI047d3/RI047d3.jpg?width=500&height=500" alt="Product 1" class="product-image" style="margin-left: auto; margin-right: auto">
+                            <a href="product1/product1.html" class="product-link"><h2 style="text-align: center">Iphone 15 pro 512GB</h2></a>
+<!--                            <p style="text-align: center">Description of Product 1</p>-->
+                            <p>Price: 1550&euro;</p>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product">
+                            <img src="https://image.alza.cz/products/SAMO0244c5/SAMO0244c5.jpg?width=500&height=500" alt="Product 2" class="product-image">
+                            <a href="index.html" class="product-link"><h2>Samsung Galaxy S23 Ultra</h2></a>
+<!--                            <p>Description of Product 2</p>-->
+                            <p>Price: 1400&euro;</p>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <img src="https://image.alza.cz/products/REAM047b1/REAM047b1.jpg?width=500&height=500" alt="Product 3" class="product-image">
+                            <a href="index.html" class="product-link"><h2>Realme 11 Pro+ 5G 12GB/512GB</h2></a>
+<!--                            <p>Description of Product 2</p>-->
+                            <p>Price: 500&euro;</p>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product">
+                            <img src="https://image.alza.cz/products/SKXI273b3/SKXI273b3.jpg?width=500&height=500" alt="Product 4" class="product-image">
+                            <a href="index.html" class="product-link"><h2>Xiaomi 13T Pro 12 GB/512 GB</h2></a>
+<!--                            <p>Description of Product 2</p>-->
+                            <p>Price: 900&euro;</p>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
